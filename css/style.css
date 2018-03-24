@@ -1,0 +1,111 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+div.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+header {
+    background-color: white;
+    float: left;
+    width: 100%;
+    border-bottom: solid 1px #f3f3f3;
+}
+
+header h1 {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+    color: #333333;
+    float: left;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 18px 0 0 0;
+    float: right;
+}
+
+@media all and (max-width:768px) {
+    header ul {
+        display: none;
+    }
+}
+
+header img.hamburger {
+    display: none;
+    max-width: 30px;
+    margin-top: 28px;
+    float: right;
+}
+
+@media all and (max-width:768px) {
+    header img.hamburger {
+        display: block;
+    }
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1rem;
+    color: #333333;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+header ul li a:hover {
+    color: greenyellow;
+}
+
+div.overlay {
+    display: none;
+    background-color: rgba(0,0,0,0.9);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+div.overlay ul {
+    padding: 0;
+    margin: 100px 0 0 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+div.overlay ul li {
+    display: block;
+}
+
+div.overlay ul li a {
+    font-family: "Quicksand", sans-serif;
+    font-size: 3rem;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+div.overlay ul li a:hover {
+    color: greenyellow;
+}
+
+div.overlay img.close {
+    max-width: 30px;
+    position: absolute;
+    right: 30px;
+    top: 26px;
+}
